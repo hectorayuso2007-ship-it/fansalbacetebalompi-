@@ -1,229 +1,257 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Albacete Balompié</title>
-	<style>
-		html, body{
-			height: 100%;
-			margin: 0px;
-		}
-		header{
-			color:#641c34;
-			text-align: center;
-			height: 20%;
-			background-color: #a18594; 
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Albacete Balompié</title>
+		<style>
+			html, body{
+				height: 100%;
+				margin: 0px;
+			}
+			header{
+				color:#641c34;
+				text-align: center;
+				height: 20%;
+				background-color: #a18594; 
 
-		}
+			}
 
-		.tamaño{
-			height: 128px;
-			width: 128px;
-			padding-left: 80px;
-			vertical-align: middle;	 
-		}
-		.cabeza{
-			display: inline-block;
-		}
-		nav{
-			height: 5%;
-			background-color: #800040;
-			margin: 0px;
-			width: 100%;
+			.tamaño{
+				height: 128px;
+				width: 128px;
+				padding-left: 80px;
+				vertical-align: middle;	 
+			}
+			.cabeza{
+				display: inline-block;
+			}
+			nav{
+				background-color: #800040;
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				padding: 10px 0;
+			}
 
-		}
-		.enlace{
-			display: inline-block;
-			width: 19%;
-			font-weight: bold;
-			background-color: #de4c8a;
-			text-align: center;
-			vertical-align: bottom;
-			color: #47202e;
-		}
+			.enlace{
+				background-color: #de4c8a;
+				color: #47202e;
+				font-weight: bold;
+				text-align: center;
+				padding: 10px 15px;
+				border-radius: 8px;
+				transition: 0.3s;
+				font-size: 18px;
+			}
+
+
+			.enlace:hover{
+				background-color: #ff6faf;
+				color: white;
+				transform: translateY(-3px);
+				box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+			}
+			
+			main {
+				display: flex;
+				height: calc(104% - 139px);
+
+			}
+			
+			section {
+				width: 85%;
+				height: 100%;
+			}
+			
+			.arreglo{
+				font-size: 40px;
+			}
+			.article{
+				background-color: #d0bcc1;
+				color: #641c34;
+				text-align: center;
+
+			}
+
+			.mih1{
+				margin: 0px;
+				background-color:#de4c8a; 
+			}
+			aside {
+				width: 15%;
+				height: 100%;
+				background-color: #de4c8a;
+				
+			}
+			.logo8 img {
+				width: 70%;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+				padding: 20px;
+			}
+			
+			
+			.piecito{
+				margin: 0px;
+				padding: 10px;
+			}
+
+			footer{
+				height: 25%;
+				width: 100%;
+				background-color: #641c34; 
+				color: #ea899a;
+				font-size: 7px;
+				margin: 0px;
+				padding: 10px;
+			}
+
+		</style>
+
+	</head>
+	<body>
 		
-		main{
-			height: 90%;
-			background-color: #d0bcc1;
-		}
+		<header>
+			<h1 class="cabeza">FANS ALBACETE BALOMPIÉ</h1>
+			<img class="tamaño" class="cabeza" src="./imagenes/logo1.png">
+		</header>
+
+
+		<nav>
+			
+			<a href="index.html"><div class="enlace">
+				Página principal
+			</div></a>
+			
+			<a href="quienessomos.html"><div class="enlace">
+				¿Quienes somos?
+			</div></a>
+			
+			<a href="historia.html"><div class="enlace">
+				Historia
+			</div></a>
+			
+			<a href="formulario.html"><div class="enlace">
+				Formulario
+			</div></a>
+			
+			<a href="estadio.html"><div class="enlace">
+				Estadio
+			</div></a>
+
+		</nav>
 		
-		section{
-			width: 80%;
-			display: block;
-			float: left;
-			height: 100%
-		}
-		
 
-		.article{
-			display: inline-block;
-			background-color: #d0bcc1;
-			color: #641c34;
-			text-align: cetner;
+		<main>
 
-		}
+			<section class="section">
 
-		.mih1{
-			margin: 0px;
-			background-color:#de4c8a; 
-		}
-		aside{
-			float: right;
-			width: 20%;
-			height: 100%;
-			background-color: #721422; 
-			text-align: center;
-		}
-		
-		.piecito{
-			margin: 0px;
-			padding: 10px;
-		}
+				<article class="article" class="formulario">
 
-		footer{
-			height: 25%;
-			width: 100%;
-			background-color: #641c34; 
-			color: #ea899a;
-			font-size: 7px;
-			margin: 0px;
-			padding: 10px;
-		}
+					<div class="arreglo">
+						Formulario de FANS ALBACETE BALOMPIÉ
+					</div>
 
-	</style>
+					<h4>Rellena este formulario conviertete en uno más de la familia albacetista</h4>
 
-</head>
-<body>
-	
-	<header>
-		<h1 class="cabeza">FANS ALBACETE BALOMPIÉ</h1>
-		<img class="tamaño" class="cabeza" src="./imagenes/logo1.png">
-	</header>
-
-
-	<nav>
-		
-		<a href="index.html"><div class="enlace">
-			Página principal
-		</div></a>
-		
-		<a href="quienessomos.html"><div class="enlace">
-			¿Quienes somos?
-		</div></a>
-		
-		<a href="historia.html"><div class="enlace">
-			Historia
-		</div></a>
-		
-		<a href="formulario.html"><div class="enlace">
-			Formulario
-		</div></a>
-		
-		<a href="estadio.html"><div class="enlace">
-			Estadio
-		</div></a>
-
-	</nav>
-	
-
-	<main>
-
-		<section class="section">
-
-			<article class="article" class="formulario">
-
-				<h1>Formulario de FANS ALBACETE BALOMPIÉ</h1>
-				<h4>Rellena este formulario conviertete en uno más de la familia albacetista</h4>
-
-				<form name="form" method="post" action="">
-					<br>
-					Nombre:<input type="text" name="Nombre">
-					Apellidos:<input type="text" name="Apellidos">
-					<br><br>
-					Usuario:<input type="text" name="Nombre">
-					Contraseña<input type="password" name="passwd">
-					<h3>Indique su provincia de referencia</h3>
-					<select name="Provincias">
-						<option value="Alava">Álava</option>
-						<option value="Albacete">Albacete</option>
-						<option value="Alicante">Alicante</option>
-						<option value="Almeria">Almería</option>
-						<option value="Asturias">Asturias</option>
-						<option value="Avila">Ávila</option>
-						<option value="Badajoz">Badajoz</option>
-						<option value="Barcelona">Barcelona</option>
-						<option value="Burgos">Burgos</option>
-						<option value="Caceres">Cáceres</option>
-						<option value="Cadiz">Cádiz</option>
-						<option value="Cantabria">Cantabria</option>
-						<option value="Castellon">Castellón</option>
-						<option value="Ciudad Real">Ciudad Real</option>
-						<option value="Cordoba">Córdoba</option>
-						<option value="Cuenca">Cuenca</option>
-						<option value="Gerona">Gerona</option>
-						<option value="Granada">Granada</option>
-						<option value="Guadalajara">Guadalajara</option>
-						<option value="Guipuzcoa">Guipúzcoa</option>
-						<option value="Huelva">Huelva</option>
-						<option value="Huesca">Huesca</option>
-						<option value="Jaen">Jaén</option>
-						<option value="La Coruña">A Coruña</option>
-						<option value="La Rioja">La Rioja</option>
-						<option value="Las Palmas">Las Palmas</option>
-						<option value="Leon">León</option>
-						<option value="Lerida">Lérida</option>
-						<option value="Lugo">Lugo</option>
-						<option value="Madrid">Madrid</option>
-						<option value="Malaga">Málaga</option>
-						<option value="Murcia">Murcia</option>
-						<option value="Navarra">Navarra</option>
-						<option value="Ourense">Ourense</option>
-						<option value="Palencia">Palencia</option>
-						<option value="Pontevedra">Pontevedra</option>
-						<option value="Salamanca">Salamanca</option>
-						<option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
-						<option value="Segovia">Segovia</option>
-						<option value="Sevilla">Sevilla</option>
-						<option value="Soria">Soria</option>
-						<option value="Tarragona">Tarragona</option>
-						<option value="Teruel">Teruel</option>
-						<option value="Toledo">Toledo</option>
-						<option value="Valencia">Valencia</option>
-						<option value="Valladolid">Valladolid</option>
-						<option value="Vizcaya">Vizcaya</option>
-						<option value="Zamora">Zamora</option>
-						<option value="Zaragoza">Zaragoza</option>
-						<option value="Ceuta">Ceuta</option>
-						<option value="Melilla">Melilla</option>
+					<form name="form" method="get" action="gracias.html">
+						<br>
+						Nombre:<input type="text" name="Nombre">
+						Apellidos:<input type="text" name="Apellidos">
+						<br><br>
+						Usuario:<input type="text" name="Nombre">
+						Contraseña<input type="password" name="passwd">
+						<h3>Indique su provincia de referencia</h3>
+						<select name="Provincias">
+							<option value="Alava">Álava</option>
+							<option value="Albacete">Albacete</option>
+							<option value="Alicante">Alicante</option>
+							<option value="Almeria">Almería</option>
+							<option value="Asturias">Asturias</option>
+							<option value="Avila">Ávila</option>
+							<option value="Badajoz">Badajoz</option>
+							<option value="Barcelona">Barcelona</option>
+							<option value="Burgos">Burgos</option>
+							<option value="Caceres">Cáceres</option>
+							<option value="Cadiz">Cádiz</option>
+							<option value="Cantabria">Cantabria</option>
+							<option value="Castellon">Castellón</option>
+							<option value="Ciudad Real">Ciudad Real</option>
+							<option value="Cordoba">Córdoba</option>
+							<option value="Cuenca">Cuenca</option>
+							<option value="Gerona">Gerona</option>
+							<option value="Granada">Granada</option>
+							<option value="Guadalajara">Guadalajara</option>
+							<option value="Guipuzcoa">Guipúzcoa</option>
+							<option value="Huelva">Huelva</option>
+							<option value="Huesca">Huesca</option>
+							<option value="Jaen">Jaén</option>
+							<option value="La Coruña">A Coruña</option>
+							<option value="La Rioja">La Rioja</option>
+							<option value="Las Palmas">Las Palmas</option>
+							<option value="Leon">León</option>
+							<option value="Lerida">Lérida</option>
+							<option value="Lugo">Lugo</option>
+							<option value="Madrid">Madrid</option>
+							<option value="Malaga">Málaga</option>
+							<option value="Murcia">Murcia</option>
+							<option value="Navarra">Navarra</option>
+							<option value="Ourense">Ourense</option>
+							<option value="Palencia">Palencia</option>
+							<option value="Pontevedra">Pontevedra</option>
+							<option value="Salamanca">Salamanca</option>
+							<option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
+							<option value="Segovia">Segovia</option>
+							<option value="Sevilla">Sevilla</option>
+							<option value="Soria">Soria</option>
+							<option value="Tarragona">Tarragona</option>
+							<option value="Teruel">Teruel</option>
+							<option value="Toledo">Toledo</option>
+							<option value="Valencia">Valencia</option>
+							<option value="Valladolid">Valladolid</option>
+							<option value="Vizcaya">Vizcaya</option>
+							<option value="Zamora">Zamora</option>
+							<option value="Zaragoza">Zaragoza</option>
+							<option value="Ceuta">Ceuta</option>
+							<option value="Melilla">Melilla</option>
 						</select>
 						<br>
+
 						<h3>Observaciones</h3>
-						<textarea name="Observaciones" cols="50" rows="10"></textarea>
+						<textarea name="Observaciones" cols="80" rows="10"></textarea>
 						<br>
 						<input type="submit" name="Enviar" value="Enviar"/>
 						<input type="reset" name="Restablecer" value="Restablecer"/>
-					</select>
-				</form>
 
-			</article>
 
-		</section>
+						
+					</form>
 
-		<aside>
-			
-			<h1>Publi</h1>
+				</article>
 
-		</aside>
+			</section>
 
-	</main>
-	
-	<footer class="piecito">
-		<h2>FANS ALBACETE BALOMPIÉ</h2>
-		<h2>hectorayuso2007@gmail.com</h2>
-		<h2>643 740 385</h2>
-		<h2>Avenida de, Av. Castilla la Mancha, 60, 02630 La Roda, Albacete</h2>
-	</footer>
+			<aside>
+				
+				<div class="logo8">
+					<img src="./imagenes/logo8.png">
+					<img src="./imagenes/logo8.png">
+					<img src="./imagenes/logo8.png">
+					
+				</div>
 
-</body>
+			</aside>
 
-</html>
+		</main>
+		
+		<footer class="piecito">
+			<h2>FANS ALBACETE BALOMPIÉ</h2>
+			<h2>hectorayuso2007@gmail.com</h2>
+			<h2>643 740 380</h2>
+			<h2>Avenida de, Av. Castilla la Mancha, 60, 02630 La Roda, Albacete</h2>
+		</footer>
+
+	</body>
+
+	</html>

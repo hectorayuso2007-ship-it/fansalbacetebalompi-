@@ -1,0 +1,59 @@
+/*gracias.css*/
+body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            background: linear-gradient(135deg, #ffafcc, #bde0fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+            animation: aparecer 0.8s ease-out;
+            max-width: 400px;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #641c34;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        a.boton {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: #de4c8a;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        a.boton:hover {
+            background: #b63a6e;
+            transform: scale(1.05);
+        }

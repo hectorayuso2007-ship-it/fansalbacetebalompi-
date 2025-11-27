@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Albacete Balompié</title>
-	<style>
-		html, body{
+/*estadio.css*/
+
+html, body{
 			height: 100%;
 			margin: 0px;
 		}
@@ -121,80 +117,3 @@
 			margin: 0px;
 			padding: 10px;
 		}
-
-	</style>
-
-</head>
-<body>
-	
-	<header>
-		<h1 class="cabeza">FANS ALBACETE BALOMPIÉ</h1>
-		<img class="tamaño" class="cabeza" src="./imagenes/logo1.png">
-	</header>
-
-
-	<nav>
-		
-		<a href="index.html"><div class="enlace">
-			Página principal
-		</div></a>
-		
-		<a href="quienessomos.html"><div class="enlace">
-			¿Quienes somos?
-		</div></a>
-		
-		<a href="historia.html"><div class="enlace">
-			Historia
-		</div></a>
-		
-		<a href="formulario.html"><div class="enlace">
-			Formulario
-		</div></a>
-		
-		<a href="estadio.html"><div class="enlace">
-			Estadio
-		</div></a>
-
-	</nav>
-	
-
-	<main>
-
-		<section>
-
-			<article class="article" >
-
-				<img class="img" src="./imagenes/lineatemp1.png">
-
-				<img class="img2" src="./imagenes/belmonte.jpg">
-				<img class="img2" src="./imagenes/belmonte2.jpg">
-				<img class="img2" src="./imagenes/belmonte5.jpg">
-
-
-			</article>
-
-		</section>
-
-		<aside>
-			
-			<div class="logo8">
-				<img src="./imagenes/logo8.png">
-				<img src="./imagenes/logo8.png">
-				<img src="./imagenes/logo8.png">
-				<img src="./imagenes/logo8.png">
-			</div>
-
-		</aside>
-
-	</main>
-	
-	<footer class="piecito">
-		<h2>FANS ALBACETE BALOMPIÉ</h2>
-		<h2>hectorayuso2007@gmail.com</h2>
-		<h2>643 740 380</h2>
-		<h2>Avenida de, Av. Castilla la Mancha, 60, 02630 La Roda, Albacete</h2>
-	</footer>
-
-</body>
-
-</html>

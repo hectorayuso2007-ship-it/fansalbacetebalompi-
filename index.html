@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Albacete Balompié</title>
+	<link rel="stylesheet" href="index.css">
 	<style>
 		html, body{
 			height: 100%;
@@ -26,70 +27,123 @@
 			display: inline-block;
 		}
 		nav{
-			height: 5%;
 			background-color: #800040;
-			margin: 0px;
 			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			padding: 10px 0;
+		}
 
-		}
 		.enlace{
-			display: inline-block;
-			width: 19%;
-			font-weight: bold;
 			background-color: #de4c8a;
-			text-align: center;
-			vertical-align: bottom;
 			color: #47202e;
+			font-weight: bold;
+			text-align: center;
+			padding: 10px 15px;
+			border-radius: 8px;
+			transition: 0.3s;
+			font-size: 18px;
+		}
+
+
+		.enlace:hover{
+			background-color: #ff6faf;
+			color: white;
+			transform: translateY(-3px);
+			box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 		}
 		
-		main{
-			height: 90%;
+		main {
+			display: flex;
+			height: calc(130% - 140px); /* Ajusta según el header */
 		}
 		
-		section{
-			width: 80%;
-			display: block;
-			float: left;
-			height: 100%
+		section {
+			width: 85%;
+			height: 100%;
 		}
 		
 
 		#topArticle{
 			height: 50%;
-			background-color: #722f37; 
+			background-color: #722f37;
 			text-align: center;
-			color: #47202e;
+			color: #251116;
+			padding-bottom: 20px;
 		}
+		
+		.mivideo{
+			text-align: left;
+			width: 300px;
+			height: 200px;
+			object-fit: cover;
+			display: inline-block;
+			margin: 10px;
+			vertical-align: top;
+			border-radius: 5px;
+		}
+		.imagenes1{
+			width: 300px;              
+			height: 200px;
+			object-fit: cover;         
+			border-radius: 5px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.gap{
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 300px;
+			margin-top: 20px;
+		}
+		.item{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 300px;
+		}
+		.item h3{
+			margin-top: 10px;
+			color: #ffd5d5;
+		}
+
 		#bottomArticle{
-			height: 50%;
+			height: 47%;
 			background-color: #722f37; 
 			text-align: center;
 			color: #47202e;
 		}
 		.galeria{
 			display: flex;
-    		justify-content: center;
-    		align-items: center;  
-    		margin:auto;
-    		padding: 20px 0;  
+			justify-content: center;
+			align-items: center;  
+			margin:auto;
+			padding: 20px 0;  
 		}
 		.imagenes2{
 			width: 300px;              
-   			height: 200px;
-    		object-fit: cover;         
-    		border-radius: 5px;
-    		display: block;
+			height: 200px;
+			object-fit: cover;         
+			border-radius: 5px;
+			display: block;
 		}
 		.mih1{
 			margin: 0px;
 			background-color:#de4c8a; 
 		}
-		aside{
-			float: right;
-			width: 20%;
+		aside {
+			width: 15%;
 			height: 100%;
-			background-color: #721422; 
-			text-align: center;
+			background-color: #de4c8a;
+			
+		}
+		.logo8 img {
+			width: 70%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+			padding: 20px;
 		}
 		
 		.piecito{
@@ -140,42 +194,71 @@
 		<a href=""><div class="enlace">
 			Estadio
 		</div></a>
-	
+
 	</nav>
 	
 
 	<main>
-	
+
 		<section>
-	
+
 			<article id="topArticle">
+				
 				<h1 class="mih1">ÚLTIMAS NOTICIAS</h1>
-			</article>
-	
-			<article id="bottomArticle">
-				<h1 class="mih1">IMAGENES POST PARTIDO</h1>
-				<div class="galeria">
-				<img  class="imagenes2"src="./imagenes/partido1.jfif">
-				<img  class="imagenes2"src="./imagenes/partido2.jfif">
-				<img  class="imagenes2"src="./imagenes/partido3.jfif">
+				
+				<div class="gap">
+
+					<div class="item">
+						<video class="mivideo" controls>
+							<source src="./video/ruedaprensa.mp4" type="video/mp4">
+							</video>
+							<h3>Albeto González en el Post Partido</h3>
+						</div>
+
+						<div class="item">
+							<img class="imagenes1" src="./imagenes/noticia.avif">
+							<h3>Dudas en la zaga albacetista</h3>
+						</div>
+
+					</div>	
+
+					
+
+				</article>
+
+				<article id="bottomArticle">
+					
+					<h1 class="mih1">IMAGENES POST PARTIDO</h1>
+					
+					<div class="galeria">
+						
+						<img  class="imagenes2"src="./imagenes/partido1.jfif">
+						<img  class="imagenes2"src="./imagenes/partido2.jfif">
+						<img  class="imagenes2"src="./imagenes/partido3.jfif">
+
+					</div>
+
+				</article>
+
+			</section>
+
+			<aside>
+				<div class="logo8">
+					<img src="./imagenes/logo8.png">
+					<img src="./imagenes/logo8.png">
+					<img src="./imagenes/logo8.png">
+					<img src="./imagenes/logo8.png">
+					<img src="./imagenes/logo8.png">
 				</div>
-			</article>
-	
-		</section>
-	
-		<aside>
-			
-			<h1>Publi</h1>
-	
-		</aside>
-	
-	</main>
-	
-	<footer class="piecito">
-		<h1 class="piecito"></h1>
+			</aside>
+
+		</main>
+
+		<footer class="piecito">
+			<h1 class="piecito"></h1>
 			<h2>FANS ALBACETE BALOMPIÉ</h2>
 			<h2>hectorayuso2007@gmail.com</h2>
-			<h2>643 740 385</h2>
+			<h2>643 740 380</h2>
 			<h2>Avenida de, Av. Castilla la Mancha, 60, 02630 La Roda, Albacete</h2>
 		</h1>
 	</footer>

@@ -1,0 +1,106 @@
+/*quienessomos.css*/
+
+html, body{
+			height: 100%;
+			margin: 0px;
+		}
+		header{
+			color:#641c34;
+			text-align: center;
+			height: 20%;
+			background-color: #a18594; 
+
+		}
+
+		.tamaño{
+			height: 128px;
+			width: 128px;
+			padding-left: 80px;
+			vertical-align: middle;	 
+		}
+		.cabeza{
+			display: inline-block;
+		}
+		nav{
+			background-color: #800040;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			padding: 10px 0;
+		}
+
+		.enlace{
+			background-color: #de4c8a;
+			color: #47202e;
+			font-weight: bold;
+			text-align: center;
+			padding: 10px 15px;
+			border-radius: 8px;
+			transition: 0.3s;
+			font-size: 18px;
+		}
+
+
+		.enlace:hover{
+			background-color: #ff6faf;
+			color: white;
+			transform: translateY(-3px);
+			box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+		}
+
+
+		nav a{
+			text-decoration: none;
+		}
+
+		main {
+			display: flex;
+			height: calc(105% - 139px); /* Ajusta según el header */
+		}
+		
+		section {
+			width: 85%;
+			height: 100%;
+		}
+
+
+		.article{
+			display: inline-block;
+			background-color: #d0bcc1;
+			color: #641c34;
+			padding: 10px;
+			font-family: "Georgia", serif;
+		}
+
+		.mih1{
+			margin: 0px;
+			background-color:#de4c8a; 
+		}
+		aside {
+			width: 15%;
+			height: 100%;
+			background-color: #de4c8a;
+			
+		}
+		.logo8 img {
+			width: 70%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		.piecito{
+			margin: 0px;
+			padding: 10px;
+		}
+
+		footer{
+			height: 25%;
+			width: 100%;
+			background-color: #641c34; 
+			color: #ea899a;
+			font-size: 7px;
+			margin: 0px;
+			padding: 10px;
+		}
